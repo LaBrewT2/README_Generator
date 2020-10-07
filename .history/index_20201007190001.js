@@ -111,12 +111,14 @@ function init() {
         // Write markdown to file
         await writeFileAsync('ExampleREADME.md', markdown);
 
-    } 
-    catch (error) {
+    } catch (error) {
         console.log(error);
-    }
+    
 };
 
+init();
+
+}
 
 // function call to initialize program
 init();

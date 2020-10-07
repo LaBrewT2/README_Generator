@@ -117,6 +117,9 @@ function init() {
     }
 };
 
+init();
+
+
 
 // function call to initialize program
 init();
