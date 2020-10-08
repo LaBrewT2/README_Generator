@@ -42,7 +42,7 @@ function generateMarkdown(data, userResponses, userInfo){
  * [License](#license)`;
  
 
- //  Installation section
+ //no Installation section
  if (userResponses.installation !== '') {
  
  draftMarkdown +=

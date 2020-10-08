@@ -2,7 +2,6 @@
 function generateMarkdown(data, userResponses, userInfo){
   return `# ${data.title}`;
 }
-
  // Generate Table of Contents conditionally based on userResponses
  let draftToC = `## Table of Contents`;
 
@@ -42,7 +41,7 @@ function generateMarkdown(data, userResponses, userInfo){
  * [License](#license)`;
  
 
- //  Installation section
+ // Optional Installation section
  if (userResponses.installation !== '') {
  
  draftMarkdown +=
@@ -56,7 +55,7 @@ function generateMarkdown(data, userResponses, userInfo){
  };
  
 
- //  Usage section
+ // Optional Usage section
  if (userResponses.usage !== '') {
  
  draftMarkdown +=
@@ -71,7 +70,7 @@ function generateMarkdown(data, userResponses, userInfo){
  };
  
  
- //  Contributing section
+ // Optional Contributing section
  if (userResponses.contributing !== '') {
  `
  
@@ -83,7 +82,7 @@ function generateMarkdown(data, userResponses, userInfo){
  };
  
 
- // Tests section
+ // Optional Tests section
  if (userResponses.tests !== '') {
  
  draftMarkdown +=
@@ -135,5 +134,6 @@ function generateMarkdown(data, userResponses, userInfo){
  // Return markdown
  return draftMarkdown;
  
- 
-export default generateMarkdown;
+}
+
+module.exports = generateMarkdown;

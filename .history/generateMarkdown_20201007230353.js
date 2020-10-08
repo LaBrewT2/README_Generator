@@ -42,7 +42,7 @@ function generateMarkdown(data, userResponses, userInfo){
  * [License](#license)`;
  
 
- //  Installation section
+ // Optional Installation section
  if (userResponses.installation !== '') {
  
  draftMarkdown +=
@@ -56,7 +56,7 @@ function generateMarkdown(data, userResponses, userInfo){
  };
  
 
- //  Usage section
+ // Optional Usage section
  if (userResponses.usage !== '') {
  
  draftMarkdown +=
