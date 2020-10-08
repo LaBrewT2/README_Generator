@@ -121,6 +121,6 @@ function generateMarkdown(data) {
     // Return markdown
     return draftMarkdown;
     
-
     
+    }
 module.exports = generateMarkdown;

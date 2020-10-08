@@ -1,7 +1,7 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}`;
-}
+ 
    // Generate Table of Contents conditionally based on userResponses
    let draftToC = `## Table of Contents`;
 
@@ -121,6 +121,6 @@ function generateMarkdown(data) {
     // Return markdown
     return draftMarkdown;
     
+    }
 
-    
 module.exports = generateMarkdown;
