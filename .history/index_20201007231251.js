@@ -121,9 +121,9 @@ async function init() {
 // function call to initialize program
 init();
 
-const userName = userResponses.userName
+const userName = questions.userName
 
-axios.get(`https://api.github.com/users/${userResponses.userName}`)
-.then(response => {
-  console.log(response.data);
+axios.get(`https://api.github.com/users/${userName}`)
+.then(questions => {
+  console.log(questions.data);
 });
