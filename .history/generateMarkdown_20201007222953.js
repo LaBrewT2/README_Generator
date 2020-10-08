@@ -17,6 +17,7 @@ function generateMarkdown(data) {
  *The what, why, and how:* 
  
  ${userResponses.description}
- `
+ '
+
 
 module.exports = generateMarkdown;
