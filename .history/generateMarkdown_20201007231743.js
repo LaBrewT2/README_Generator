@@ -1,5 +1,7 @@
 // function to generate markdown for README
-function generateMarkdown(userResponses, userInfo){
+function generateMarkdown(data, userResponses, userInfo){
+  return `# ${data.title}`;
+}
 
  // Generate Table of Contents conditionally based on userResponses
  let draftToC = `## Table of Contents`;
@@ -54,7 +56,7 @@ function generateMarkdown(userResponses, userInfo){
  };
  
 
- // Optional Usage section
+ //  Usage section
  if (userResponses.usage !== '') {
  
  draftMarkdown +=
@@ -69,7 +71,7 @@ function generateMarkdown(userResponses, userInfo){
  };
  
  
- // Optional Contributing section
+ //  Contributing section
  if (userResponses.contributing !== '') {
  `
  
@@ -81,7 +83,7 @@ function generateMarkdown(userResponses, userInfo){
  };
  
 
- // Optional Tests section
+ // Tests section
  if (userResponses.tests !== '') {
  
  draftMarkdown +=
@@ -133,7 +135,5 @@ function generateMarkdown(userResponses, userInfo){
  // Return markdown
  return draftMarkdown;
  
-
- }
-
-module.exports = generateMarkdown;
+ 
+export default generateMarkdown;
