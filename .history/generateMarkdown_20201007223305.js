@@ -2,6 +2,7 @@
 function generateMarkdown(data) {
   return `# ${data.title}`;
  
+ 
 
  // Generate markdown for the top required portions of the README
  let draftMarkdown = 
@@ -107,6 +108,5 @@ function generateMarkdown(data) {
     // Return markdown
     return draftMarkdown;
     
-    }
-
+    }  
 module.exports = generateMarkdown;
