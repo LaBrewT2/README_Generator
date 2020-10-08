@@ -91,11 +91,11 @@ const writeFileAsync = util.promisify(writeToFile);
 
 
 // function to initialize program
-async function init() {
+function init() {
     try {
 
         // Prompt Inquirer questions
-        const userResponses = await inquirer.prompt(questions);
+        //const userResponses = await inquirer.prompt(questions);
         console.log("Your responses: ", userResponses);
         console.log("Thank you for your responses! Fetching your GitHub data next...");
     

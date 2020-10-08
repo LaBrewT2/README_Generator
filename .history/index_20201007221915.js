@@ -91,7 +91,7 @@ const writeFileAsync = util.promisify(writeToFile);
 
 
 // function to initialize program
-async function init() {
+afunction init() {
     try {
 
         // Prompt Inquirer questions

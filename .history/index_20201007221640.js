@@ -16,7 +16,7 @@ const questions = [
         type: 'input',
         message: "What is the name of your GitHub repo?",
         name: 'repo',
-        default: 'README_Generator',
+        default: 'README_generator',
         validate: function (answer) {
             if (answer.length < 1) {
                 return console.log("A valid GitHub repo is required for a badge.");
@@ -91,7 +91,7 @@ const writeFileAsync = util.promisify(writeToFile);
 
 
 // function to initialize program
-async function init() {
+function init() {
     try {
 
         // Prompt Inquirer questions
