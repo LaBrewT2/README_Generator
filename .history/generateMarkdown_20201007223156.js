@@ -31,30 +31,5 @@ function generateMarkdown(data) {
   ${userResponses.installation}`
   };
   
-  // Optional Usage section
-  if (userResponses.usage !== '') {
   
-    draftMarkdown +=
-    
-    `
-    
-    ## Usage 
-    
-    *Instructions and examples for use:*
-    
-    ${userResponses.usage}`
-    };
-    
-    
-    // Optional Contributing section
-    if (userResponses.contributing !== '') {
-    `
-    
-    ## Contributing
-    
-    *If you would like to contribute it, you can follow these guidelines for how to do so.*
-    
-    ${userResponses.contributing}`
-    };
-    
 module.exports = generateMarkdown;
