@@ -1,0 +1,19 @@
+{
+  "name": "readme_generator",
+  "version": "1.0.0",
+  "description": "Automatic Readme Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LaBrewT2/README_Generator"
+  },
+  "author": "Tanasia LaBrew",
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "^1.11.0"
+  }
+  private: true;
+}
