@@ -86,16 +86,35 @@ async function writeToFile(fileName, data) {
         console.log("Success! Your README.md file has been generated")
     });
 }
+
+const writeFileAsync = util.promisify(writeToFile);
+
+
 // function to initialize program
 async function init() {
-    const answers = await inquirer.prompt(questions)
-    .then((answers) =>{
-        console.log(answers);
-        const htmlString = generateMarkdown(answers);
+    try {
 
-        writeToFile(answers.name + ".md", htmlString);
-    });
+        // Prompt Inquirer questions
+        const userResponses = await inquirer.prompt(questions);
+        console.log("Your responses: ", userResponses);
+        console.log("Thank you for your responses! Fetching your GitHub data next...");
+    
+        // Call GitHub api for user info
+        const userInfo = await api.getUser(userResponses);
+        console.log("Your GitHub user info: ", userInfo);
+    
+        // Pass Inquirer userResponses and GitHub userInfo to generateMarkdown
+        console.log("Generating your README next...")
+        const markdown = generateMarkdown(userResponses, userInfo);
+        console.log(markdown);
+    
+        // Write markdown to file
+        await writeFileAsync('ExampleREADME.md', markdown);
 
+    } 
+    catch (error) {
+        console.log(error);
+    }
 };
 
 

@@ -96,6 +96,7 @@ async function init() {
         writeToFile(answers.name + ".md", htmlString);
     });
 
+}
 };
 
 
