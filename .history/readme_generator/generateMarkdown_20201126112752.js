@@ -1,3 +1,4 @@
+
 // function to generate markdown for README
 function generateMarkdown(userResponses, userInfo){
     return `# ${userResponses.title}

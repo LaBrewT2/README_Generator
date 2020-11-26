@@ -24,7 +24,7 @@ const questions = [
 ];
 
 // function to write README file
-async function writeToFile (fileName,data) {
+async function writeToFile (fileName,userInfo,user) {
     await writeAsync (fileName,data);
         }
       

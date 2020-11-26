@@ -1,3 +1,4 @@
+const answers =re
 // function to generate markdown for README
 function generateMarkdown(userResponses, userInfo){
     return `# ${userResponses.title}

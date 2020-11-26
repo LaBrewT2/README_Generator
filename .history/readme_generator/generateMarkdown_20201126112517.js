@@ -61,7 +61,7 @@ function generateMarkdown(userResponses, userInfo){
  ---
  
  ## Questions?
-`
+``
 }
 
 module.exports = generateMarkdown;

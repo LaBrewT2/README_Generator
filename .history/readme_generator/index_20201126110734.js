@@ -1,8 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require ("fs");
 const util = require ("util");
-const answers = require("answers");
-const generateMarkdown = require ("./generateMarkdown"); 
+const generateMarkdown = require ('./generateMarkdown'); 
 const writeAsync = util.promisify(fs.writeFile);
 
 // array of questions for user
@@ -32,13 +31,14 @@ async function writeToFile (fileName,data) {
 
 // function to initialize program
 async function init () {
-     answers = await inquirer.prompt(questions)
+    const answers = await inquirer.prompt(questions)
     .then((answers) =>{
         console.log(answers);
         const htmlString = generateMarkdown(answers);
 
         writeToFile(answers.name + ".md", htmlString);
 });
+console.log(_.range(5));
 }
 
 

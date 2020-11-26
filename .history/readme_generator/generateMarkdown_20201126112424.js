@@ -11,7 +11,7 @@ function generateMarkdown(userResponses, userInfo){
  * [Tests](#tests)
  * [License](#license)
  * [Questions](#questions)
-
+`
 
  // Generate markdown for the top required portions of the README
 
@@ -61,7 +61,7 @@ function generateMarkdown(userResponses, userInfo){
  ---
  
  ## Questions?
-`
+
 }
 
 module.exports = generateMarkdown;

@@ -1,7 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require ("fs");
 const util = require ("util");
-const answers = require("answers");
 const generateMarkdown = require ("./generateMarkdown"); 
 const writeAsync = util.promisify(fs.writeFile);
 
@@ -39,6 +38,7 @@ async function init () {
 
         writeToFile(answers.name + ".md", htmlString);
 });
+console.log(questions);
 }
 
 
